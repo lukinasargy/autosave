@@ -1,0 +1,62 @@
+textarea {
+  width: 500px;
+  height: 200px;
+  font-size: 24px;
+  outline-color: bisque;
+  font-family: 'Satisfy', cursive;
+  color: lightcoral;
+  border: 1px solid coral;
+}
+
+body {
+  text-align: center;
+  font-family: 'Satisfy', cursive;
+/*  background: linear-gradient(bisque, lightskyblue);*/
+  width: 100vh;
+  height: 100vh;
+  margin: 0 auto;
+  animation-name: bg-color;
+  animation-duration: 50s;
+  background-color: bisque;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+::selection {
+  background-color: lightcoral;
+  color: #fff;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  background-color: honeydew;
+  border: none;
+  outline: none;
+  line-height: 50px;
+  width: 200px;
+  border-radius: 50px;
+  font-size: 24px;
+  font-family: 'Satisfy', cursive;
+  color: lightcoral;
+  transition: all 1s;
+  
+}
+
+button:hover {
+  background-color: lightcyan;
+  cursor:pointer;
+}
+
+h1 {
+  color: lightcoral;
+  font-size: 100px;
+  font-weight: 400;
+}
+@keyframes bg-color {
+  0% {  background-color: bisque;
+}
+  25% {background-color: lightskyblue;}
+}
+50% {background-color: azure;}
+75% {background-color: cornsilk;}
+100% {background-color: bisque;}
